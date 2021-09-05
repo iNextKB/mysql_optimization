@@ -1,0 +1,13 @@
+/etc/my.cnf
+max_connections = 500
+
+set global max_connections = 500;
+
+thread_cache_size
+
+https://dba.stackexchange.com/questions/1229/how-do-you-calculate-mysql-max-connections-variable
+https://serverfault.com/questions/408845/what-value-of-thread-cache-size-should-i-use
+https://stackoverflow.com/questions/8665233/thread-cache-size-reduce-cpu-and-max-connection
+
+SHOW VARIABLES LIKE 'have_query_cache';
+SHOW STATUS LIKE 'Qcache%';
